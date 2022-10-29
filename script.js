@@ -22,7 +22,7 @@ function compute()
 function validatePrincipal()
 {
     var principal = document.getElementById("principal").value;
-    if (principal <= 0) {
+    if (principal <= 0 || principal == "") {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     }
