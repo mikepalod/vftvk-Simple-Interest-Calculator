@@ -18,4 +18,13 @@ function compute()
         "You will receive an amount of <mark>" + interest +  "</mark>,<br/>" +
         "in the year <mark>" + year + "</mark>";    
 }
+
+function validatePrincipal()
+{
+    var principal = document.getElementById("principal").value;
+    if (principal <= 0) {
+        alert("Enter a positive number");
+        document.getElementById("principal").focus();
+    }
+}
         
